@@ -1,0 +1,23 @@
+.box-card{
+  overflow: visible;
+  margin-bottom:10px;
+  label{
+    margin-right:20px;
+    b{
+      margin-right:5px;
+    }
+    .el-input{
+      width:200px;
+    }
+  }
+}
+.pagin{
+  padding-top:15px;
+}
+
+.el-icon-circle-check{
+  color:green;
+}
+.el-icon-circle-close{
+  color:red;
+}

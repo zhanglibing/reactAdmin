@@ -1,0 +1,11 @@
+.pageTitle{
+  position: relative;
+  .title{
+    display: inline-block;
+  }
+  button{
+    position: absolute;
+    top:0;
+    right:0;
+  }
+}

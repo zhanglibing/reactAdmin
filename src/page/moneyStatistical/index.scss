@@ -1,0 +1,17 @@
+.el-table{
+  margin-bottom:40px;
+}
+.topbox{
+  label{
+    display: inline-block;
+    width:25%;
+    margin-right:5%;
+    .el-input{
+      width:100%;
+    }
+    b{
+      display: block;
+      margin-bottom:5px;
+    }
+  }
+}
