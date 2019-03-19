@@ -40,6 +40,12 @@ export default class Slide extends React.Component {
                             <NavLink to="/MoneyStatistical"><Menu.Item index="/MoneyStatistical">资金统计</Menu.Item></NavLink>
                             <NavLink to="/list"><Menu.Item index="/list">资金流信息</Menu.Item></NavLink>
                         </Menu.SubMenu>
+                        <Menu.SubMenu index="5" title={<span><i className="iconfont icon-zijinguanli"></i>study</span>}>
+                            <NavLink to="/routerhome"><Menu.Item index="/routerhome">嵌套路由demo</Menu.Item></NavLink>
+                        </Menu.SubMenu>
+                        <Menu.SubMenu index="6" title={<span><i className="iconfont icon-zijinguanli"></i>父子组件</span>}>
+                            <NavLink to="/parent"><Menu.Item index="/parent">父子组件调用</Menu.Item></NavLink>
+                        </Menu.SubMenu>
                     </Menu>
                 </Layout.Col>
             </div>
