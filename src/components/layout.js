@@ -1,7 +1,7 @@
 import React from 'react'
 import 'antd/dist/antd.css';
 import Slider from './slider'
-import HeaderComponent from './HeaderComponent'
+import HeaderComponent from './header/index'
 import './layout.scss'
 import { Layout } from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
