@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Button, Table, Card, Pagination,MessageBox,Message} from 'element-react';
 import 'element-theme-default';
 import PageTitle from '../../components/page-title/index'
-import {Ajax} from '../../api'
+import api from '../../api'
 import './index.scss'
 export default class GoodManage extends React.Component {
     constructor(props) {
@@ -16,7 +16,7 @@ export default class GoodManage extends React.Component {
     }
     //获取商品分类
     getGoodClass(){
-        Ajax('ProductHandle/ProductList',{
+        api('ProductHandle/ProductList',{
             Page:1,
             PageSize: 20,
             SearchCategoryId: '',

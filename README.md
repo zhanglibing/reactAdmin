@@ -20,6 +20,17 @@ git commit -m "init"
 - 项目目录中生成一个新的文件夹，react-devtools -> shells -> chrome -> build -> unpacked文件夹
 - 打开chrome扩展程序chrome://extensions/，加载已解压的扩展程序，选择第3步中的生成的unpacked文件夹。这时就会添加一个新的扩展程序react-devtools，并在你的浏览器右上角会有个react标志, 就表示成功啦。
 
+### redux-devtools 安装调试工具
+- `https://github.com/zalmoxisus/redux-devtools-extension#usage`
+- 下载或者 `git clone https://github.com/zalmoxisus/redux-devtools-extension.git`
+- npm install
+- npm run build:extension
+- chrome://extensions   (谷歌浏览器输入) 添加build文件夹下的extension
+
+- 报错时
+-  Failed to load external module @babel/register  （运行 `npm i -g gulp@3.9.0`） 降级gulp@3.9.0`） 降级
+
+
 ## Available Scripts
 
 In the project directory, you can run:
