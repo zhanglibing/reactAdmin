@@ -2,6 +2,7 @@ import React,{ Component } from 'react';
 import {
     Link,
     NavLink,
+    Switch,
     Route,
     Redirect
 
@@ -18,14 +19,17 @@ export default class Home extends Component {
     render() {
         return (
             <div className="home">
+                <h1>tab切换页面</h1>
                 <div className="link-box">
                     <NavLink  to="/routerhome/parent" >parent页面</NavLink>
                     <NavLink  to="/routerhome/child" >child页面</NavLink>
                 </div>
+                <Switch>
+                    <Route exact path="/routerhome" Redirect="/parent" />
+                    <Route path="/routerhome/parent" component={parent}/>
+                    <Route path="/routerhome/child" component={child}/>
+                </Switch>
 
-
-                <Route path="/routerhome/parent" component={parent}/>
-                <Route path="/routerhome/child" component={child}/>
             </div>
         );
     }

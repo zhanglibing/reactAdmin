@@ -15,7 +15,6 @@ class PrivateRoute extends Component {
             }, 1000)
         }
     }
-
     render() {
         let {component: Component, ...rest} = this.props;
         return this.props.userId ?
